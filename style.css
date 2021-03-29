@@ -1,0 +1,182 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* HEADER */
+body {
+  background: #222;
+  color: white;
+  /* background-color: #60b347; */
+}
+header {
+  position: relative;
+  height: 35vh;
+  border-bottom: 7px solid white;
+  font-family: 'Yatra One', cursive;
+}
+.btn {
+  padding: 10px 50px;
+  font-size: 25px;
+  margin: 20px;
+  border-radius: 7px;
+  outline: none;
+  font-family: inherit;
+  letter-spacing: 2px;
+}
+.btn:hover {
+  background-color: #999;
+}
+.between {
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  font-size: 25px;
+  margin: 15px;
+}
+h1 {
+  text-align: center;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  transform: translate(-50% -50%);
+  font-size: 60px;
+}
+.guess-number {
+  text-align: center;
+  font-size: 50px;
+  position: absolute;
+  bottom: -20%;
+  left: 50%;
+  transform: translateX(-50% 50%);
+  padding: 40px 0;
+  width: 150px;
+  background: white;
+  color: black;
+}
+
+/* MAIN? */
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  height: 65vh;
+  align-items: center;
+  flex-wrap: wrap;
+  font-family: 'Yatra One', cursive;
+}
+.left {
+  flex-basis: 50%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.right {
+  flex-basis: 50%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+}
+.put-in {
+  display: block;
+  padding: 15px;
+  background: none;
+  border: 5px solid white;
+  text-align: center;
+  font-size: 50px;
+  width: 180px;
+  color: white;
+  margin-bottom: 10px;
+}
+.start-guess {
+  font-size: 30px;
+  margin-bottom: 60px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+.score-lable,
+.highscore-lable {
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+.score-lable {
+  padding-right: 40px;
+}
+.score,
+.highscore {
+  padding-left: 30px;
+}
+
+/* MOBILE SE */
+@media only screen and (max-width: 320px) {
+  header {
+    height: 40vh;
+  }
+  h1 {
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 30px;
+  }
+  .between {
+    font-size: 15px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin: 20px 10px 0 0;
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 10px;
+  }
+  .guess-number {
+    font-size: 30px;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 0;
+    width: 90px;
+  }
+  main {
+    height: 60vh;
+  }
+  .right,
+  .left {
+    flex-basis: 100%;
+  }
+  .left {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .check {
+    margin-top: 30px;
+  }
+  .put-in {
+    margin-top: 30px;
+    padding: 15px;
+    font-size: 30px;
+    width: 120px;
+    margin-bottom: 10px;
+  }
+  .score-lable,
+  .highscore-lable {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .score-lable {
+    margin-bottom: 10px;
+    padding-right: 30px;
+  }
+  .start-guess {
+    font-size: 25px;
+    margin-bottom: 20px;
+  }
+}
